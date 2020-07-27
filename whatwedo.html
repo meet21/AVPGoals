@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpeg" type="image/png">
+    <title>AVP Goals</title>
+
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- google fonts--->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+     <!--box-icons------>
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+     
+    <!--- whats app api---->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-200c5038-a787-4f62-8058-35b5d7e6475d"></div>
+
+    <!-- jquery link--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+
+    <!-- main css file  --->
+    <link rel="stylesheet" href="css/whatwedo.css">
+</head>
+<body onload="myFunction()">
+ 
+  <!-- preloader  -->
+     <div id="loading"></div>
+  <!-- preloader End  --->
+<!-- scroll to top button  -->
+  <button id="myBtn" onclick="topFunction()"><i class="fas fa-angle-double-up"></i></button>
+  
+  <!--- start nav bar ----->
+   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="top: 0;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo1.jpeg" height="70" width="70" style="border-radius: 50%; margin-right: 10px;">AVP Goals</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+        <!--  <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>-->
+          <li class="nav-item"><a href="whatwedo.html" class="nav-link">What We Do</a></li>
+         <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="#"><img src="vectoricons/company.png" class="vicons mr-1 mb-2">For School Students</a>
+                <a class="dropdown-item" href="#"><img src="vectoricons/book.png" class="vicons mr-1 mb-2">For UG(Pre-Final Year) Students</a>
+                <a class="dropdown-item" href="#"><img src="vectoricons/university.png" class="vicons mr-1 mb-1">For UG Final Year Students</a>
+                <a class="dropdown-item" href="#"><img src="vectoricons/experience.png" class="vicons mr-1 mb-2">For PG Students</a>
+              </div>
+          </li>-->
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modules</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="resume.html"><img src="vectoricons/winner.png" class="vicons mr-1 mb-2">A Winning Resume</a>
+                <a class="dropdown-item" href="mock.html"><img src="vectoricons/interview.png" class="vicons mr-1 mb-2">Mock Interview</a>
+                <a class="dropdown-item" href="public.html"><img src="vectoricons/speaking.png" class="vicons mr-1 mb-2">Public Speaking</a>
+                <a class="dropdown-item" href="Group.html"><img src="vectoricons/discussion.png" class="vicons mr-1 mb-2">Group Discussions</a>
+                <a class="dropdown-item" href="startup.html"><img src="vectoricons/rocket.png" class="vicons mr-1 mb-2">Running a Startup</a>
+                <a class="dropdown-item" href="patent.html"><img src="vectoricons/idea.png" class="vicons mr-1 mb-2">Patents and Projects</a>
+                <a class="dropdown-item" href="internship.html"><img src="vectoricons/internship.png" class="vicons mr-1 mb-2">Internships</a>
+              </div>
+          </li>
+          <li class="nav-item"><a href="dreams.html" class="nav-link">Customise Your Dream</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+          <li class="nav-item cta" style="cursor: pointer;"><a class="nav-link" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">    <span>Login / Signup</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!---============================ End nav bar area  ===============================-------------------->
+  <!---================================= banner area   ==============================------------------>
+     <div class="hero" style="background-image: url('img/img5.jpg');">
+        
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 intro text-center">
+              <h1 class="text-white mt-5">We help you to achieve your DREAM.</h1>
+                  <div class="text-white" style="font-size: 22px;">We transform the student experience with personal guidance from teachers and industry professionals.</div>
+
+                  <div class="col-lg-8 mx-auto">
+                      <div class="blue-btn">
+                        <a class="first-link" href="">
+                          GET STARTED
+                        </a>
+                        <a href="#guidance">
+                          LEARN MORE
+                          </a>
+                        </div>
+                        </a>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!---================================= End banner area   ==============================------------------>
+
+  <!----- ===============================why do we need guidance  ============================--->
+<div class="site-section" id="guidance">
+  <h1 class="text-dark text-center mt-3 mb-5 ">Why do we need guidance?</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <a href="#" class="d-flex service-2">
+                <div class="icon-wrap">
+                  <img src="vectoricons/book.png"  width="80px" height="80px">
+                </div>
+                <div class="contents">
+                  <h3>Personalised career mentorship.</h3>
+                  <p>There are about 100,000 data points that define a students journey from 1st year to placements – these are his/her academic credentials, his/her performance across sports and other activities, his/her soft skills and others. However, we focus on what is important to you and what should you do to get things done.</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <a href="#" class="d-flex service-2">
+                <div class="icon-wrap">
+                   <img src="vectoricons/internship.png" width="80px" height="80px">
+                </div>
+                <div class="contents">
+                  <h3>Step by step guidance to achieve your dreams.</h3>
+                  <p>Rome wasn’t built in a day. The same goes for a successful career. The earlier you start the better it is. We help break those big goals into small steps that are met easily. The result, your dream job!<br><br><br></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <a href="#" class="d-flex service-2">
+                <div class="icon-wrap">
+                   <img src="vectoricons/idea.png" width="80px" height="80px">
+                </div>
+                <div class="contents">
+                  <h3>Outlets for students to vent their feelings about career.</h3>
+                  <p>The journey to your dream job isn’t easy. We don’t always know our dream. We don’t always have someone to talk to. We solve that problem and become your true sounding board. You can share anything and everything with us. Rest assured, your secrets are safe with us.</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <a href="#" class="d-flex service-2">
+                <div class="icon-wrap">
+                  <img src="vectoricons/Startup.png" width="80px" height="80px">
+                </div>
+                <div class="contents">
+                  <h3>Guidance from professionals closer to your generation.</h3>
+                  <p>Sometimes, we need people who understand us. Someone working at a dream company might not be the relevant person if they do not understand the current age and competition. We ensure that your mentors are as close to your current standing as possible.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!----- ===============================End why do we need guidance  ============================--->
+  <!--- questions sec tions  ---->
+   <div class="site-section">
+    <h1 class="text-dark text-center mt-3 mb-5 "> Okay What Next?</h1>
+      <div class="container">
+        <div class="row mb-3">
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="entry2">
+              <a href="#"><img src="img/workk.jpg" alt="Image" class="img-fluid rounded"></a>
+              <!--<span class="post-category text-white bg-success mb-3">Nature</span>-->
+             <!-- <div class="post-meta align-items-center text-left clearfix">
+                <figure class="author-figure mb-0 mr-3 float-left"><img src="images/about-2.jpg" alt="Image" class="img-fluid"></figure>
+                <span class="d-inline-block mt-1">By <a href="#">Carrol Atkinson</a></span>
+                <span>&nbsp;-&nbsp; February 10, 2019</span>
+              </div>
+              <p class="mt-0 text-uppercase" style="line-height: 25px; font-size: 15px;">We take you through a series of baby steps that are customised to you. A path way uniquely designed to help you achieve your dream.</p>-->
+            </div>
+          </div>
+          <div class="col-lg-6 pl-lg-4">
+            <div class="entry3 d-block d-sm-flex">
+              <figure class="figure order-2"><a href="#"><img src="img/img3.jpg" alt="Image" class="img-fluid rounded"></a></figure>
+              <div class="text mr-4 order-1">
+                <!--<span class="post-category text-white bg-success mb-3">Nature</span>-->
+                <h2 class="text-uppercase mt-4" style="font-size: 15px;">Are you great at sports and want to join with a consultancy firm?</h2>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio.</p>-->
+              </div>
+            </div>
+
+            <div class="entry3 d-block d-sm-flex">
+              <figure class="figure order-2"><a href="#"><img src="img/about-2.jpg" alt="Image" class="img-fluid rounded"></a></figure>
+              <div class="text mr-4 order-1">
+                <!--<span class="post-category text-white bg-success mb-3">Nature</span>-->
+                <h2 class="text-uppercase mt-4" style="font-size: 15px;">Is your dream job at google but you are stuck in a non-traditional field?</h2>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio.</p>-->
+              </div>
+            </div>
+
+            <div class="entry3 d-block d-sm-flex">
+              <figure class="figure order-2"><a href="single.html"><img src="img/portfolio-2.jpg" alt="Image" class="img-fluid rounded"></a></figure>
+              <div class="text mr-4 order-1">
+                <!--<span class="post-category text-white bg-success mb-3">Nature</span>-->
+                <h2 class="text-uppercase mt-4" style="font-size: 15px;">Don't think it's possible ?<br> With a job offer in hand,what do you have to lose to give it a shot?</h2>
+               <!-- <span class="post-meta mb-3 d-block">May 12, 2019</span>-->
+               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio.</p>-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+          <h5 class="text-uppercase text-center lastline">We user machine learning to map your background and inputs with that of a mentor who best suits your need.</h5>
+    </div>
+
+  <!--- End questions sections   ----->
+  <!-- login section  --->
+  
+ <!--- login area --->
+        <div class="modal fade login" id="loginModal" style="top: 100px;">
+          <div class="modal-dialog login animated">
+              <div class="modal-content">
+                 <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"style="position: relative; left: 90px; outline: none;"><i class="fa fa-times-circle cross" id="cross"></i></button>
+                        <h6 class="text-center" style="position:relative; right: 110px; top: 10px;">Signup using</h6>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box">
+                             <div class="content">
+                                <div class="social">
+                                    <a class="circle twitter" href="#">
+                                        <i class="bx bxl-twitter"></i></i>
+                                    </a>
+                                    <a id="google_login" class="circle google" href="#">
+                                        <i class="bx bxl-google-plus fa-fw"></i>
+                                    </a>
+                                    <a id="facebook_login" class="circle facebook" href="#">
+                                        <i class="bx bxl-facebook"></i></i>
+                                    </a>
+                                </div>
+                                <div class="division">
+                                    <div class="line l"></div>
+                                      <span>Login</span>
+                                    <div class="line r"></div>
+                                </div>
+                                <div class="error"></div>
+                                <div class="form loginBox">
+                                    <form method="" action="" accept-charset="UTF-8">
+                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    </form>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="box">
+                            <div class="content registerBox" style="display:none;">
+                             <div class="form">
+                                <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="forgot login-footer">
+                            <span>Looking to
+                                 <a href="javascript: showRegisterForm();" class="text-primary">create an account</a>
+                            ?</span>
+                        </div>
+                        <div class="forgot register-footer" style="display:none">
+                             <span>Already have an account?</span>
+                             <a href="javascript: showLoginForm();" class="text-primary">Login</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+             <!--================ start footer Area  =================-->  
+    <footer id="footer">
+
+      <div class="footer-top mt-5">
+        <div class="container">
+        <div class="row">
+    
+          <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>AVP Goals</h3>
+          <p>
+            Gurgaon<br>
+          <!--  <strong><i class="lnr lnr-phone-handset"></i> Phone:</strong> (+91) 7045384435<br>-->
+            <strong><i class="lnr lnr-envelope"></i> Email:</strong> Info@gmail.com <br>
+          </p>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="whatwedo.html">What We Do</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Modules</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="dreams.html">Customise Your Dream</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About Us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="careers.html">Careers</a></li>
+          </ul>
+          </div>
+    
+        <!--  <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Events</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event1</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event2</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event3</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event4</a></li>
+          </ul>
+          </div>-->
+     
+          <div class="col-lg-5 col-md-12 footer-newsletter">
+          <h4>Subscribe To Our Newsletter</h4>
+          <p>We would keep you updated with how our students across the country are able to get closer to their dreams. </p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+          </div>
+    
+        </div>
+        </div>
+      </div>
+    
+      <div class="container d-lg-flex py-4">
+    
+        <div class="mr-lg-auto text-center text-lg-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AVP Goal Fulfilment private limited</span></strong>. All Rights Reserved
+        </div>
+       <!-- <div class="credits">
+          Designed by <a href="https://meet21.github.io/Resume/">Meet Bhalgamiya</a>
+        </div>-->
+        </div>
+        <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      </footer>>
+            </div> 
+        </div>
+
+    </div>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

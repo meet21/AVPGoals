@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVP Goals</title>
+
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- google fonts--->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+     <!--box-icons------>
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+     
+    <!--- whats app api---->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-200c5038-a787-4f62-8058-35b5d7e6475d"></div>
+
+    <!-- jquery link--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+
+    <!-- main css file  --->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="myFunction()">
+ 
+	<!-- preloader  -->
+	   <div id="loading"></div>
+	<!-- preloader End  --->
+  <!-- scroll to top button  -->
+  <button id="myBtn" onclick="topFunction()"><i class="fas fa-angle-double-up"></i></button>
+  <!--- start nav bar ----->
+   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="top: 0;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AVP Goals</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+        <!--  <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>-->
+          <li class="nav-item"><a href="whatwedo.html" class="nav-link">What We Do</a></li>
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="school.html"><img src="vectoricons/company.png" class="vicons mr-1 mb-2">For School Students</a>
+                <a class="dropdown-item" href="#"><img src="vectoricons/book.png" class="vicons mr-1 mb-2">For UG(Pre-Final Year) Students</a>
+                <a class="dropdown-item" href="#"><img src="vectoricons/university.png" class="vicons mr-1 mb-1">For UG Final Year Students</a>
+                <a class="dropdown-item" href="#"><img src="vectoricons/experience.png" class="vicons mr-1 mb-2">For PG Students</a>
+              </div>-->
+          </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modules</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="resume.html"><img src="vectoricons/winner.png" class="vicons mr-1 mb-2">A Winning Resume</a>
+                <a class="dropdown-item" href="mock.html"><img src="vectoricons/interview.png" class="vicons mr-1 mb-2">Mock Interview</a>
+                <a class="dropdown-item" href="public.html"><img src="vectoricons/speaking.png" class="vicons mr-1 mb-2">Public Speaking</a>
+                <a class="dropdown-item" href="Group.html"><img src="vectoricons/discussion.png" class="vicons mr-1 mb-2">Group Discussions</a>
+                <a class="dropdown-item" href="startup.html"><img src="vectoricons/rocket.png" class="vicons mr-1 mb-2">Running a Startup</a>
+                <a class="dropdown-item" href="patent.html"><img src="vectoricons/idea.png" class="vicons mr-1 mb-2">Patents and Projects</a>
+                <a class="dropdown-item" href="internship.html"><img src="vectoricons/internship.png" class="vicons mr-1 mb-2">Internships</a>
+              </div>
+          </li>
+          <li class="nav-item"><a href="dreams.html" class="nav-link">Customise Your Dream</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+          <li class="nav-item cta" style="cursor: pointer;"><a class="nav-link" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">    <span>Login / Signup</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--
+    <div class="tm-page-wrap mx-auto">
+        <div class="position-relative">
+            <div class="position-absolute tm-site-header">
+                <div class="container-fluid position-relative">
+                    <div class="row">
+                        <div class="col-7 col-md-4">
+                            <a href="index.html">
+                                <h1 class="tm-site-name py-3 ml-5">Objective Cafe</h1>
+                            </a>
+                        </div>
+                        <div class="col-5 col-md-8 ml-auto">
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              What We Do
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#"><img src="vectoricons/company.png" class="vicons mr-1 mb-2">For School Students</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/book.png" class="vicons mr-1 mb-2">For UG(Pre-Final Year) Students</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/university.png" class="vicons mr-1 mb-1">For UG Final Year Students</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/experience.png" class="vicons mr-1 mb-2">For PG Students</a>
+                              
+                            </div>
+                         </li>
+                       <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Destinations
+                          </a>
+                          <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                                         <a href="#">Country Guide</a>
+                                         <a href="#">Why Study in USA</a>
+                                         <a href="#">Cost of Living in USA</a></p>
+                                  </div>
+                          <div class="col-md-4">
+                         <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                       <a href="#">Country Guide</a>
+                       <a href="#">Why Study in USA</a>
+                       <a href="#">Cost of Living in USA</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                       <a href="#">Country Guide</a>
+                       <a href="#">Why Study in USA</a>
+                       <a href="#">Cost of Living in USA</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                       <a href="#">Country Guide</a>
+                       <a href="#">Why Study in USA</a>
+                       <a href="#">Cost of Living in USA</a></p>
+                </div>
+                <div class="col-md-4 ">
+                    <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                       <a href="#">Country Guide</a>
+                       <a href="#">Why Study in USA</a>
+                       <a href="#">Cost of Living in USA</a></p>
+                </div>
+            </div> 
+        </div>
+      </li>
+        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">Tests</a>
+                            <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color py-5 px-3"
+                              aria-labelledby="navbarDropdownMenuLink3">
+                              <div class="row">
+                                <div class="col-md-4 ">
+                                    <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                                       <a href="#">Country Guide</a>
+                                       <a href="#">Why Study in USA</a>
+                                       <a href="#">Cost of Living in USA</a></p>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                                       <a href="#">Country Guide</a>
+                                       <a href="#">Why Study in USA</a>
+                                       <a href="#">Cost of Living in USA</a></p>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <p><strong class="sub-menu-heading text-danger">Study In USA</strong>
+                                       <a href="#">Country Guide</a>
+                                       <a href="#">Why Study in USA</a>
+                                       <a href="#">Cost of Living in USA</a></p>
+                                </div>
+                                
+
+                            </div>
+                          </li>-->
+
+      <!--                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Modules
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#"><img src="vectoricons/winner.png" class="vicons mr-1 mb-2">A Winning Resume</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/interview.png" class="vicons mr-1 mb-2">Mock Interview</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/speaking.png" class="vicons mr-1 mb-2">Public Speaking</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/discussion.png" class="vicons mr-1 mb-2">Group Discussions</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/rocket.png" class="vicons mr-1 mb-2">Running a Startup</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/idea.png" class="vicons mr-1 mb-2">Patents and Projects</a>
+                              <a class="dropdown-item" href="#"><img src="vectoricons/internship.png" class="vicons mr-1 mb-2">Internships</a>
+                            </div>
+                         </li>
+                         <li class="nav-item">
+                           <a href="#" class="nav-link">Customise Your Dream</a>
+                         </li>
+                         <li class="nav-item">
+                           <a href="#" class="nav-link">Future Dream</a>
+                         </li>
+                         <!--<li><button type="button" class="btn btn1 mr-3 text-center">Deadlines</li>-->
+          <!--               <li><button type="button" id="button" class="btn btn2 mr-2 text-center py-2">Login / Sign-up</button></li>
+                    </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <!--- end nav area ---->
+            <!---video  banner area   --->
+             <div class="tm-welcome-container text-center text-white">
+                <div class="tm-welcome-container-inner mt-2">
+                    <p class="text-white glow">Your Dream Job <br>is not a Dream any more </p>
+                    <p class="tm-welcome-text text-white text-uppercase py-2">We Enable you To Achieve them By Hedging the risk involved</p>
+                    <p class="typedani text-uppercase"><span class="typed" data-typed-items="Dream Job,Become an Actress/actor in Bollywood,Genetic Code based Physical Health, Get Payouts in case of job loss,and more..."></span></p>
+
+                    <!--<form class="form-inline active-pink-4 d-flex justify-content-center">
+                      <input class="form-control form-control-sm mr-3 w-50" style="border-radius: 10px;" type="text" placeholder="Find information about University,Courses,Colleges,Exams and more"aria-label="Search">
+                      <i class="fas fa-search text-info search_icon" aria-hidden="true"></i>
+                    </form>-->
+                </div>
+            </div>
+
+             <!-- contact box-->
+             <form action="contact.php" method="post" class="contact_main">
+               <div class="info">Get Free Career Guidance!</div>
+               <div class="info2">Contact Number</div>
+               <form action="#" method="post" name="form" class="form-box">
+                <label for="Contact"></label>
+                <input type="tel" name="phone" class="contactno" placeholder="Enter your number" required>
+                <input type="submit" id="send" name="submit" value="Go" class="sub_btn">
+
+             </form>
+         <!-- End contact boc --->
+
+            <div id="tm-video-container">
+                <video autoplay muted loop id="tm-video">
+                    <!--<source src="video/sunset-timelapse-video.mp4" type="video/mp4">-->
+                    <source src="video/vbanner.mp4" type="video/mp4">
+                </video>    
+            </div>
+        </div>
+         <!--- End video banner area   --->
+        <!-- testimonial section--------->
+  <div class="container">
+    <h1 class="text-center text-dark py-5 mt-2">Our Results</h1>
+    <div class="row">
+        <div class="col-sm-10">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="img/person_1.jpg" alt="">
+                    </div>
+                    <p class="description">
+                        I really liked the passion of XXX mentors I interacted with. I realized they really willing to help me achieve that dream job.<br>Their guidance provided me a remarkable improvement in my performance. The mock interviews proved to be the most beneficial<br>to me.They enabled me to approach the final interview with confidence which I lacked earlier.<br> I owe a big part of my selection to them.
+                    </p>
+                    <div class="testimonial-prof">
+                        <span class="title">Preeti Chauhan</span>
+                        <small>Web Developer</small>
+                    </div>
+                </div>
+ 
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="img/person_2.jpg" alt="">
+                    </div>
+                    <p class="description">
+                       I never knew an internship and a patent could matter so much on my resume. My speaking skills were also in shambles.<br> Now, I possess the confidence to go up and get anything done. 
+                    </p>
+                    <div class="testimonial-prof">
+                        <span class="title">John</span>
+                        <small>Web Designer</small>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="img/person_2.jpg" alt="">
+                    </div>
+                    <p class="description">
+                       I was never a good student. However, XXXX taught me that its ok to be different. The mentors inspired me to build an overall <br>personality and my interests in F1 are actually what got me thorough my interview.
+                    </p>
+                    <div class="testimonial-prof">
+                        <span class="title">Hopper</span>
+                        <small>Web Designer</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End testimonial area---->
+<!-- start brand area ----->
+<!--================================Start brand area======================================-->
+     <section class="brand-area">
+      <h1 class="text-center m-4 text-dark pt-5">Our Principles</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="first-row row grid-divider">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/BCG.jpg" alt="Brand-1"style="height: 85px; width: 100px; position: relative;left: 30px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/sc.png" alt="Brand-2" style="height: 85px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/nomura.jpg" alt="Brand-3"style="height: 35px; position: relative; top: 25px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/paytm.jpg" alt="Brand-4" style="position: relative; bottom: 10px;">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="first-row row grid-divider">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/google.jpg" alt="Brand-5">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/mslogo.jpg" alt="Brand-6">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/amazone.png" alt="Brand-7" style="height: 110px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/fp.png" alt="Brand-8" style="height: 140px; position: relative; bottom: 20px;">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="first-row row grid-divider">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/bb.jpg" alt="Brand-9" style="height: 60px; position: relative;top: 20px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/infosys.png" alt="Brand-10">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/ab.png" alt="Brand-1" style="height: 90px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="./img/brands/pg.jpg" alt="Brand-1" style="position: relative;bottom: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--================================End brand area======================================-->
+<!-- start company area  ----->
+
+<section id="counter">
+  <h1 class="text-dark text-center py-5">Our Achievements</h1>
+  <div class="hero">
+    <h5 class="op">
+        <p class="text-center py-5 text-white">EXPERIENCED MENTORS | PERSONALIZED SERVICE | UNMATCHED SUCCESS RATE</p></h5>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 py-5 text-center op">
+          <i class="fas fa-4x fa-chalkboard text-white"></i>
+          <h3>
+            <span class="counter yellow" data-target="10000">0</span>
+            <span class="yellow">+</span>
+          </h3>
+          <h2 class="text-white">Sessions</h2>
+        </div>
+        <div class="col-md-2 py-5  text-center op">
+          <i class="fas fa-4x fa-briefcase text-white"></i>
+          <h3>
+            <span class="counter yellow" data-target="1000">0</span>
+            <span class="yellow">+</span>
+          </h3>
+          <h2 class="text-white">Startups</h2>
+        </div>
+        <div class="col-md-3 py-5  text-center op">
+          <i class="fas  fa-4x fa-chalkboard-teacher text-white"></i>
+          <h3>
+            <span class="counter yellow" data-target="6000">0</span>
+            <span class="yellow">+</span>
+          </h3>
+          <h2 class="text-white">Professionals</h2>
+        </div>
+        <div class="col-md-2 py-5  text-center op">
+          <i class="fas fa-4x fa-graduation-cap text-white"></i>
+          <h3>
+            <span class="counter yellow" data-target="300000">0</span>
+            <span class="yellow">+</span>
+          </h3>
+          <h2 class="text-white">Students</h2>
+
+        </div>
+        <div class="col-md-3 py-5  text-center op">
+          <i class="fas fa-4x fa-building text-white"></i>
+          <h3>
+            <span class="counter yellow" data-target="4000">0</span>
+            <span class="yellow">+</span>
+          </h3>
+          <h2 class="text-white">Colleges</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<!--End company area  ------>
+
+<!-- your mentors area ----->
+<h1 class="text-center text-dark py-5 mt-3">Our Mentor Values System</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-3">
+        <div class="card">
+          <div class="card-block">
+            <h1 class="card-text good-review-score float-left"><img src="./img/icon-supervisor.svg" alt=""></h1>
+            <h4 class="card-title mt-3">Ownership</h4>
+            <p class="card-text text-dark mr-2">Your dream is ours once you come on board and we make it happen.</p>
+          </div>
+        </div>
+        <div class="card mt-5">
+          <div class="card-block">
+            <h1 class="card-text good-review-score float-left"><img src="./img/icon-karma.svg" alt=""></h1>
+            <h4 class="card-title mt-3">Backup</h4>
+            <p class="card-text text-dark mr-2">We leave nothing to chance specially with our garantee program.</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-3">
+        <div class="card">
+          <div class="card-block">
+            <h1 class="card-text good-review-score float-left"><img src="./img/icon-team-builder.svg" alt=""></h1>
+            <h4 class="card-title mt-3 text-uppercase">Depth of experience</h4>
+            <p class="card-text mr-2">We know what you are going to go through because we have been there.</p>
+          </div>
+        </div>
+        <div class="card mt-5">
+          <div class="card-block">
+            <h1 class="card-text good-review-score float-left"><img src="./img/icon-calculator.svg" alt=""></h1>
+            <h4 class="card-title mt-3">Personalised guidance</h4>
+            <p class="card-text mr-2">We understand you are going to be different and thrive on it.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!--<ul class="list1"><h1 class="text-center text-dark py-5 mt-3">Our Mentor Values System</h1>
+    <section class="cards grid">
+      <li class="list"><div class="card cyan">
+        <h1 class="text-dark">
+          Ownership
+        </h1>
+        <h2 class="text-dark">
+          Your dream is ours once you come on board and we make it happen.
+        </h2>
+        <div class="card-img">
+          <img src="./img/icon-supervisor.svg" alt="">
+        </div>
+      </div></li>
+      <li class="list"><div class="card red">
+        <h1 class="text-dark">
+          Depth of experience
+        </h1>
+        <h2 class="text-dark">
+          We know what you are going to go through because we have been there.
+        </h2>
+        <div class="card-img">
+          <img src="./img/icon-team-builder.svg" alt="">
+        </div>
+      </div></li>
+      <li class="list"><div class="card orange">
+        <h1 class="text-dark">
+          Backup
+        </h1>
+        <h2 class="text-dark">
+          We leave nothing to chance specially with our garantee program.
+        </h2>
+        <div class="card-img">
+          <img src="./img/icon-karma.svg" alt="">
+        </div>
+      </div></li>
+      <li class="list"><div class="card blue">
+        <h1 class="text-dark">
+          Personalised guidance
+        </h1>
+        <h2 class="text-dark">
+          We understand you are going to be different and thrive on it.
+        </h2>
+        <div class="card-img">
+          <img src="./img/icon-calculator.svg" alt="">
+        </div>
+      </div></li>
+    </section></ul>-->
+
+<!-- end your mentor area  ----->
+
+    <!--- login area --->
+        <div class="modal fade login" id="loginModal" style="top: 100px;">
+          <div class="modal-dialog login animated">
+              <div class="modal-content">
+                 <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"style="position: relative; left: 90px; outline: none;"><i class="fa fa-times-circle cross" id="cross"></i></button>
+                        <h6 class="text-center" style="position:relative; right: 110px; top: 10px;">Signup using</h6>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box">
+                             <div class="content">
+                                <div class="social">
+                                    <a class="circle twitter" href="#">
+                                        <i class="bx bxl-twitter"></i></i>
+                                    </a>
+                                    <a id="google_login" class="circle google" href="#">
+                                        <i class="bx bxl-google-plus fa-fw"></i>
+                                    </a>
+                                    <a id="facebook_login" class="circle facebook" href="#">
+                                        <i class="bx bxl-facebook"></i></i>
+                                    </a>
+                                </div>
+                                <div class="division">
+                                    <div class="line l"></div>
+                                      <span>Login</span>
+                                    <div class="line r"></div>
+                                </div>
+                                <div class="error"></div>
+                                <div class="form loginBox">
+                                    <form method="" action="" accept-charset="UTF-8">
+                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    </form>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="box">
+                            <div class="content registerBox" style="display:none;">
+                             <div class="form">
+                                <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="forgot login-footer">
+                            <span>Looking to
+                                 <a href="javascript: showRegisterForm();" class="text-primary">create an account</a>
+                            ?</span>
+                        </div>
+                        <div class="forgot register-footer" style="display:none">
+                             <span>Already have an account?</span>
+                             <a href="javascript: showLoginForm();" class="text-primary">Login</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+              <!--================ start footer Area  =================-->  
+    <footer id="footer">
+
+      <div class="footer-top mt-5">
+        <div class="container">
+        <div class="row">
+    
+          <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>AVP Goals</h3>
+          <p>
+            Gurgaon<br>
+          <!--  <strong><i class="lnr lnr-phone-handset"></i> Phone:</strong> (+91) 7045384435<br>-->
+            <strong><i class="lnr lnr-envelope"></i> Email:</strong> Info@gmail.com <br>
+          </p>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="whatwedo.html">What We Do</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Modules</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="dreams.html">Customise Your Dream</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About Us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="careers.html">Careers</a></li>
+          </ul>
+          </div>
+    
+        <!--  <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Events</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event1</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event2</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event3</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Events.html">Event4</a></li>
+          </ul>
+          </div>-->
+     
+          <div class="col-lg-5 col-md-12 footer-newsletter">
+          <h4>Subscribe To Our Newsletter</h4>
+          <p>We would keep you updated with how our students across the country are able to get closer to their dreams. </p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+          </div>
+    
+        </div>
+        </div>
+      </div>
+    
+      <div class="container d-lg-flex py-4">
+    
+        <div class="mr-lg-auto text-center text-lg-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AVP Goal Fulfilment private limited</span></strong>. All Rights Reserved
+        </div>
+       <!-- <div class="credits">
+          Designed by <a href="https://meet21.github.io/Resume/">Meet Bhalgamiya</a>
+        </div>-->
+        </div>
+        <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      </footer>>
+            </div> 
+        </div>
+
+    </div> <!-- .tm-page-wrap -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 7000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+    </script>
+     <!-- typed js file---->
+    <script src="typed.js/typed.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
